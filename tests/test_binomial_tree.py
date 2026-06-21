@@ -1,0 +1,66 @@
+from finance_project.option import Option
+from finance_project.binomial_tree import BinomialTreeModel
+
+
+def test_american_put_ge_european_put():
+    european = Option(
+        strike=100,
+        maturity=1,
+        type="put",
+        exercise="european",
+    )
+
+    american = Option(
+        strike=100,
+        maturity=1,
+        type="put",
+        exercise="american",
+    )
+
+    model = BinomialTreeModel(
+        init_price=100,
+        rate=0.05,
+        volatility=0.2,
+        num_of_steps=200,
+        model="crr",
+    )
+
+    assert model.price(american) >= model.price(european)
+
+
+def test_bermudan_between_european_and_american():
+    european = Option(
+        strike=100,
+        maturity=1,
+        type="put",
+        exercise="european",
+    )
+
+    bermudan = Option(
+        strike=100,
+        maturity=1,
+        type="put",
+        exercise="bermudan",
+        exercise_steps={50, 100, 150, 200},
+    )
+
+    american = Option(
+        strike=100,
+        maturity=1,
+        type="put",
+        exercise="american",
+    )
+
+    model = BinomialTreeModel(
+        init_price=100,
+        rate=0.05,
+        volatility=0.2,
+        num_of_steps=200,
+        model="crr",
+    )
+
+    european_price = model.price(european)
+    bermudan_price = model.price(bermudan)
+    american_price = model.price(american)
+
+    assert european_price <= bermudan_price <= american_price
