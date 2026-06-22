@@ -2,7 +2,7 @@ from finance_project.option import Option
 from finance_project.black_scholes import BlackScholesModel
 from finance_project.binomial_tree import BinomialTreeModel
 
-def test_black_scholes_call_known_value():
+def test_black_scholes_call_value():
     option = Option(strike=100, maturity=1, type="call")
     model = BlackScholesModel(init_price=100, rate=0.05, volatility=0.2)
 
@@ -11,7 +11,7 @@ def test_black_scholes_call_known_value():
     assert abs(price - 10.4506) < 1e-4
 
 
-def test_black_scholes_put_known_value():
+def test_black_scholes_put_value():
     option = Option(strike=100, maturity=1, type="put")
     model = BlackScholesModel(init_price=100, rate=0.05, volatility=0.2)
 

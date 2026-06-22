@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a379835-f21b-4456-940b-6d21b4154542" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/notebooks/convergence.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/finance_project/binomial_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/finance_project/black_scholes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/finance_project/option.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_binomial_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_black_scholes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Finance project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Finance project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance_project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance_project/crr.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/finance_project/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_black_scholes.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_black_scholes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +69,7 @@
       <workItem from="1782035629500" duration="1343000" />
       <workItem from="1782064648033" duration="15468000" />
       <workItem from="1782082059973" duration="909000" />
-      <workItem from="1782083467215" duration="938000" />
+      <workItem from="1782083467215" duration="3043000" />
     </task>
     <servers />
   </component>
