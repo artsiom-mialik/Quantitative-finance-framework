@@ -1,6 +1,6 @@
 import numpy as np
-from finance_project.interest_rate.CIR import CIRModel
-from finance_project.interest_rate.vasicek import VasicekModel
+from quant_framework.interest_rate.CIR import CIRModel
+from quant_framework.interest_rate.vasicek import VasicekModel
 
 
 def test_cir_paths_shape():

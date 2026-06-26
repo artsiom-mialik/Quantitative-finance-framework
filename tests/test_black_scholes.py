@@ -1,6 +1,6 @@
-from finance_project.option import Option
-from finance_project.black_scholes import BlackScholesModel
-from finance_project.binomial_tree import BinomialTreeModel
+from quant_framework.option import Option
+from quant_framework.black_scholes import BlackScholesModel
+from quant_framework.binomial_tree import BinomialTreeModel
 
 def test_black_scholes_call_value():
     option = Option(strike=100, maturity=1, type="call")

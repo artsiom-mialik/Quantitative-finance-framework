@@ -1,5 +1,5 @@
-from finance_project.option import Option
-from finance_project.binomial_tree import BinomialTreeModel
+from quant_framework.option import Option
+from quant_framework.binomial_tree import BinomialTreeModel
 
 
 def test_crr_bermudan_between_european_and_american():

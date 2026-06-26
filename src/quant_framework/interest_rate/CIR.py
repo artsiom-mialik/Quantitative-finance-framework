@@ -1,4 +1,4 @@
-from finance_project.interest_rate.IRModel import InterestRateModel
+from quant_framework.interest_rate.IRModel import InterestRateModel
 import numpy as np
 
 class CIRModel(InterestRateModel):
